@@ -26,6 +26,10 @@ nav ul li {
 	display: inline-block;
 	background: #113E65;
 	margin: 20px;
-	padding: 20px;
+	padding: 10px;
 
+}
+
+i {
+	margin: 10px;
 }
