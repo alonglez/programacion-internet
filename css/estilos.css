@@ -4,36 +4,42 @@
 	font-family: 'Nunito Sans', sans-serif;
 }
 
-h3 {
+header section h3 {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-nav {
+header nav {
 	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-	background: #113E65;
-	display: block;
 	position: fixed;
+	background: #113E65;	
 }
 
-nav ul li a {
+header nav ul {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	justify-content: space-around;
+}
+
+header nav ul li {
+	list-style: none;
+	padding: 10px 10px 10px 10px;
+}
+
+header nav ul li:hover {
+	list-style: none;
+	background: #2066A4;
+	padding: 10px;
+}
+
+header nav ul li a {
 	text-decoration: none;
 	color: #fff;
-	display: inline-block;
 }
 
-nav ul li {
-	list-style: none;
-	display: inline-block;
-	margin: 5px;
-	padding: 0px 30px 0px 30px;
-
-}
-
-i {
+header nav ul i {
 	margin-right: 8px;
 }
 
@@ -46,6 +52,7 @@ div article img {
 	height: auto;
 	margin: auto;
 	display: block;
+	-webkit-box-shadow: 5px 5px 0px #ccc;
 	box-shadow: 5px 5px 0px #ccc;
 }
 
