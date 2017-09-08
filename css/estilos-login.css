@@ -134,9 +134,15 @@ input[type="submit"]:active{
 	transform: scale(0.95);
 }
 
-form a {
-	text-align: center;
+form a{
+	margin: 0px 30px;
+	padding: 10px;
 	color: #000
+}
+
+form a:hover {
+	background: #209D4A;
+
 }
 
 footer {
