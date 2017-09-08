@@ -135,13 +135,17 @@ input[type="submit"]:active{
 }
 
 form a{
+	font-weight: 600;
+	border-radius: 10px;
+	background: #209D4A;
 	margin: 0px 30px;
 	padding: 10px;
 	color: #000
 }
 
 form a:hover {
-	background: #209D4A;
+	border-radius: 10px;
+	background: #27BD59;
 
 }
 
