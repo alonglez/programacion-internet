@@ -81,7 +81,7 @@ body .contenedor-principal {
 	margin: 0 auto;
 }
 
- .contenedor-principal section{
+.contenedor-principal section{
 	margin-top: 10px;
 }
 
@@ -89,8 +89,17 @@ body .contenedor-principal {
 	padding-bottom: 30px;
 	border-bottom: 1px solid #000;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;	
+	-webkit-box-orient: horizontal;	
+	-webkit-box-direction: normal;	
+	-ms-flex-direction: row;	
 	flex-direction: row;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -108,12 +117,17 @@ body .contenedor-principal {
 	margin-left: 10px;
 	margin-top: 30px;
 	margin-bottom: 10px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
 	text-align: justify;
 }
 
-.contenedor-principal section h2 {
+.contenedor-principal section h1 {
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 5px;
@@ -122,10 +136,27 @@ body .contenedor-principal {
 	margin-bottom: 20px;
 }
 
-.contenedor-principal section article .btn-ver-mas{
-	width: 60px;
+.contenedor-principal article a {
+	font-weight: 600;
+	width: 100px;
 	margin: 10px 15px 0px 0px;
+	-ms-flex-item-align: end;
 	align-self: flex-end;
+	text-decoration: none;
+	background: #113E65;
+	text-align: center;
+	color: #fff;
+	border: 2px solid;
+	padding: 5px;
+	border-radius: 6px;
+}
+
+.contenedor-principal article a:active {
+	border: 1px inset #000;
+}
+
+.contenedor-principal article a:hover {
+	background: #315998;
 }
 
 footer {
@@ -133,16 +164,34 @@ footer {
 	background: #113E65;
 	padding: 20px;
 
+	display: -webkit-box;
+
+	display: -ms-flexbox;
+
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
 }
 
 footer .redes-sociales{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
 	flex-direction: row;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -157,6 +206,8 @@ footer .redes-sociales nav a:hover{
 
 footer .derechos-reservados {
 	width: 100%;
+	font-weight: 600;
+	padding: 5px;
 	text-align: center;
 }
 
