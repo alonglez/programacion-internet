@@ -95,7 +95,7 @@ header nav a:hover {
 .recuperar-clave h2 {
 	text-align: center;
 	margin-bottom: 20px;
-	color: #000;
+	color: #fff;
 	letter-spacing: 5px;
 	font-size: 50px;
 }
@@ -104,16 +104,20 @@ form {
 	width: 70%;
 	max-width: 500px;
 	padding: 30px;
-	background: #A09D9A;
+	background: #091E30;
 	border-radius: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 input {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.1);
 	display: block;
 	padding: 10px;
 	width: 100%;
 	margin: 40px 0;
+	border-radius: 5px;
+	border: 2px solid darkgrey;
 	font-size: 20px;
 }
 
@@ -122,7 +126,7 @@ input[type="submit"]{
 	border: 0;
 	letter-spacing: 7px;
 	cursor: pointer;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin-bottom: 0px;
 }
 
@@ -132,6 +136,18 @@ input[type="submit"]:hover{
 
 input[type="submit"]:active{
 	transform: scale(0.95);
+}
+
+::-webkit-input-placeholder{
+	color: #fff;
+}
+
+:-ms-input-placeholder{
+	color: #fff;
+}
+
+::placeholder{
+	color: #fff;
 }
 
 footer {
