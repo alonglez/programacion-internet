@@ -92,6 +92,14 @@ header nav a:hover {
 	justify-content: center;
 }
 
+.formulario-login h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #000;
+	letter-spacing: 5px;
+	font-size: 36px;
+}
+
 form {
 	width: 70%;
 	max-width: 500px;
@@ -99,14 +107,6 @@ form {
 	background: #A09D9A;
 	border-radius: 10px;
 	border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.formulario-login h2 {
-	text-align: center;
-	margin-bottom: 20px;
-	color: #000;
-	letter-spacing: 5px;
-	font-size: 36px;
 }
 
 input {
