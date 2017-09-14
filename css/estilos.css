@@ -9,6 +9,21 @@
 
 body {
 	background: #E9E9E9;
+	width: 100%
+}
+
+.contenedor-principal {
+	width: 100%;
+	margin: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 header {
@@ -74,18 +89,26 @@ header nav a:hover {
 	background: #E74C3C;
 }
 
-body .contenedor-principal {
-	background: #fff;
+.mas-vendidos{
 	width: 70%;
 	padding: 90px;
+	background: #fff;
 	margin: 0 auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
-.contenedor-principal section{
-	margin-top: 10px;
-}
-
-.contenedor-principal section article {
+.mas-vendidos article {
 	padding-bottom: 30px;
 	border-bottom: 1px solid #000;
 
@@ -103,11 +126,11 @@ body .contenedor-principal {
 	align-items: center;
 }
 
-.contenedor-principal section article img {
+.mas-vendidos article img {
 	width: 260px;
 }
 
-.contenedor-principal section article:nth-last-child(1) {
+.mas-vendidos article:nth-last-child(1) {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	border-bottom: none;
@@ -127,7 +150,7 @@ body .contenedor-principal {
 	text-align: justify;
 }
 
-.contenedor-principal section h1 {
+.mas-vendidos h1 {
 	font-size: 40px;
 	text-align: center;
 	letter-spacing: 5px;
@@ -136,7 +159,7 @@ body .contenedor-principal {
 	margin-bottom: 20px;
 }
 
-.contenedor-principal article a {
+.mas-vendidos article a {
 	font-weight: 600;
 	width: 100px;
 	margin: 10px 15px 0px 0px;
@@ -151,11 +174,11 @@ body .contenedor-principal {
 	border-radius: 6px;
 }
 
-.contenedor-principal article a:active {
+.mas-vendidos article a:active {
 	border: 1px inset #000;
 }
 
-.contenedor-principal article a:hover {
+.mas-vendidos article a:hover {
 	background: #315998;
 }
 
