@@ -90,7 +90,7 @@ header nav a:hover {
 }
 
 .carrito-compras {
-    width: 70%;
+    width: 77%;
     padding: 90px 70px;
     background: #fff;
     margin: 0 auto;
@@ -138,16 +138,15 @@ table {
 }
 
 .producto-agregado {
-    padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
 }
 
-/*.producto-agregado:nth-last-child(1) {
+.producto-agregado:nth-last-child(1) {
 
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
-}*/
+}
 
 .img-producto {
     padding: 20px;
@@ -174,9 +173,34 @@ input[type="number"]{
     width: 70px;
 }
 
+.precio-producto {
+    padding: 20px;
+}
 
+.total-producto { 
+    padding: 10px 20px;
+}
 
+.btn-remover {
+    padding-top: 20px    
+}
 
+.total-producto h4 {
+    margin-top: 50px;
+}
+
+input[type="button"]{
+    font-weight: 600;
+    background: #113E65;
+    color: #fff;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+input[type="button"]:hover{
+    background: #315998;
+    cursor: pointer;
+}
 
 footer {
     width: 100%;
