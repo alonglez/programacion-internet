@@ -1,53 +1,89 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="description" content="Compra/Venta de componentes electronicas nuevos o usados">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="css/estilos-carrito.css">
-	<title>Regístrate</title>
-</head>
-<body>
-	<div class="contenedor-principal">
-		<header>
-			<div class="logo">
-				<figure>
-					<img src="img/logo.jpg" alt="Piezas MKP">
-					<a href="#">Piezas MKP</a>
-				</figure>		
-			</div>
-			<nav>
-				<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
-				<a href="#"><i class="fa fa-book" aria-hidden="true"></i>Catálogo</a>
-				<a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
-				<a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>
-			</nav>
-		</header>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Compra/Venta de componentes electronicas nuevos o usados">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos-carrito.css">
+        <title>Regístrate</title>
+    </head>
+    <body>
+        <div class="contenedor-principal">
+            <header>
+                <div class="logo">
+                    <figure>
+                        <img src="img/logo.jpg" alt="Piezas MKP">
+                        <a href="#">Piezas MKP</a>
+                    </figure>		
+                </div>
+                <nav>
+                    <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+                    <a href="#"><i class="fa fa-book" aria-hidden="true"></i>Catálogo</a>
+                    <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+                    <a href="login.html"><i class="fa fa-user" aria-hidden="true"></i>Inicia sesión o regístrate</a>
+                </nav>
+            </header>
 
-		<footer>
-			<section class="redes-sociales">
-				<nav>
+            <section class="carrito-compras">
+                <div class="encabezado-carrito">
+                    <h2>CARRITO DE COMPRAS</h2>
+                </div>
+                <div class="cuerpo-carrito">
+                    <table>
+                        <tbody>
+                            <tr class="encabezado-cuerpo-carrito">
+                                <th>Imagen</th>
+                                <th>Descripción</th>
+                                <th>Cantidad</th>
+                                <th>Precio</th>
+                                <th>Total</th>
+                            </tr>
+                            <tr class="producto-agregado">
+                                <td class="img-producto">
+                                    <figure>
+                                        <img src="img/kingston-mem.JPG" alt="Memoria RAM Kingston 4GB">
+                                    </figure>
+                                </td>
+                                <td class="txt-producto">
+                                    <h3>Memoria Kingston 4GB DDR3</h3>
+                                    <p>Código: SK1AB</p>                                    
+                                </td>
+                                <td class="cantidad-producto">
+                                    <input min="1" type="number" value="1" class="form-control input-small">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-					<a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
-					<a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a>
-					<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
-					<a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>				
-				</nav>
 
-				<div class="logo">
-					<figure>
-						<img src="img/logo.jpg" alt="Piezas MKP">
-						<a href="#">Piezas MKP</a>
-					</figure>		
-				</div>
-			</section>
 
-			<section class="derechos-reservados">
-				<p>© 2017, Piezas MKP. Todos los derechos reservados.</p>
-			</section>
-		</footer>
-	</div>
-</body>
+            </section>
+
+            <footer>
+                <section class="redes-sociales">
+                    <nav>
+
+                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+                        <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>				
+                    </nav>
+
+                    <div class="logo">
+                        <figure>
+                            <img src="img/logo.jpg" alt="Piezas MKP">
+                            <a href="#">Piezas MKP</a>
+                        </figure>		
+                    </div>
+                </section>
+
+                <section class="derechos-reservados">
+                    <p>© 2017, Piezas MKP. Todos los derechos reservados.</p>
+                </section>
+            </footer>
+        </div>
+    </body>
 </html>
