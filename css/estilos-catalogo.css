@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: #E9E9E9;
+    width: 100%
+}
+
+.contenedor-principal {
+    width: 100%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+header {
+    background: #113E65;
+    width: 100%;
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: fixed;
+}
+
+.logo a{
+    margin-left: 10px;
+    font-size: 20px;
+    color: #fff;
+    line-height: 35px;
+}
+
+.logo img{
+    width: 50px;
+    vertical-align: top;
+}
+
+header nav {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+i {
+    margin-right: 8px;
+}
+
+header nav a:hover {
+    background: #E74C3C;
+}
+
+.seccion-principal{
+    width: 95%;
+    padding: 90px 0px 33px 0px;
+    background: #fff;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+}
+
+.menu-lateral {
+    border: 1px solid #000;
+    width: 26%;
+    background: #113E65;
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.menu-lateral h3 {
+    text-align: center;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+i {
+    margin-right: 10px;
+}
+
+.menu-lateral a {
+    padding: 15px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.menu-lateral a:hover{
+    background: #D35D08;
+}
+
+.productos {
+    margin-left: 350px;
+}
+
+.cant-productos-mostrados {
+    width: 95%;
+    margin: 20px 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+table {
+    margin-left: 30px;
+}
+
+.img-producto {
+    padding: 20px;
+}
+
+.descripcion-producto {
+    padding: 20px;
+}
+
+.descripcion-producto ul {
+    margin-left: 20px;    
+}
+
+.descripcion-producto ul li{
+    padding: 5px;    
+}
+
+.descripcion-producto ul li p {
+    font-weight: 600;    
+}
+
+.precio-producto {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-carrito {
+    margin-top: 20px;    
+}
+
+.btn-carrito input {
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: #BF8F1A
+
+}
+
+.btn-carrito input:hover {
+    background: #DAA420;
+    cursor: pointer;
+}
+
+
+footer {
+    width: 100%;
+    background: #113E65;
+    padding: 20px;
+    z-index: 1;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .redes-sociales nav a {
+    color: #fff;
+    padding: 15px;
+}
+
+footer .redes-sociales nav a:hover{
+    background: #E74C3C;
+}
+
+footer .derechos-reservados {
+    width: 100%;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
