@@ -100,12 +100,12 @@ header nav a:hover {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
-    flex-direction: column;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .encabezado-carrito {
@@ -139,13 +139,6 @@ table {
 
 .producto-agregado {
     border-bottom: 1px solid #ccc;
-}
-
-.producto-agregado:nth-last-child(1) {
-
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: none;
 }
 
 .img-producto {
@@ -189,7 +182,7 @@ input[type="number"]{
     margin-top: 50px;
 }
 
-input[type="button"]{
+.total-producto input[type="button"]{
     font-weight: 600;
     background: #113E65;
     color: #fff;
@@ -197,9 +190,41 @@ input[type="button"]{
     border-radius: 5px;
 }
 
-input[type="button"]:hover{
+.total-producto input[type="button"]:hover{
     background: #315998;
     cursor: pointer;
+}
+
+.total-carrito {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;    
+}
+
+.total-carrito h2 {
+    padding: 15px;
+    background: #D35D08;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.btn-footer-carrito {
+    margin-top: 30px;    
+}
+
+.btn-footer-carrito a {
+    background: #209D4A;
+    padding: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    margin: 10px;
+    color: #fff;
+}
+
+.btn-footer-carrito a:hover{
+    background: #27BD59;
 }
 
 footer {
