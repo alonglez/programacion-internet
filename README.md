@@ -25,7 +25,7 @@ Dentro de las principales funcionalidades del proyecto tenemos las siguientes:
 
 Usuario.
 ------------------
-####Registro de usuario.
+#### Registro de usuario. ####
 
 El usuario podrá registrarse en la página. La información que se le solicitara sera la siguiente:
 
@@ -38,29 +38,29 @@ El usuario podrá registrarse en la página. La información que se le solicitar
 
 El llenado de todos los campos será necesario para que se lleve a cabo el registro.
 
-####Recuperación de cuenta.
+#### Recuperación de cuenta. ####
 
 En caso de que el usuario haya olvidado su contraseña podrá recuperarla ingresando en el apartado de recuperación de contraseña dentro del inicio de sesión, ingresando su correo con el cual se registro.
 
 Se le enviará a su correo las indicaciones necesarias para poder restablecer su contraseña.
 
-####Navegación en categorías.
+#### Navegación en categorías. ####
 
 El usuario podrá navegar dentro de sitio, dando click en las diferentes categorías que presenta el menú.
 
-####Búsqueda de productos.
+#### Búsqueda de productos. ####
 
 El usuario podrá buscar algún producto escribiendo el nombre de este dentro de la caja de busqueda. El sistema arrojará los resultados obtenidos.
 
-####Agregar productos al carrito.
+#### Agregar productos al carrito. ####
 
 El usuario podrá estando logueado en el sistema o no, agregar productos al carrito de compras, el cual irá mostrando la cantidad de productos agregados así como el costo total a pagar.
 
-####Quitar productos del carrito.
+#### Quitar productos del carrito. ####
 
 El usuario podrá estando logueado en el sistema o no, remover productos que no desee del carrito de compras, ingresando al carrito y seleccionando el producto que ya no desee.
 
-####Pagar productos.
+#### Pagar productos. ####
 
 Una vez que el usuario haya agregado los productos deseados al carrito de compras, deberá ingresar al sistema para poder proceder al pago de los mismos. Se mostrará los productos que desea comprar, la cantidad, así como el total que deberá pagar.
 
