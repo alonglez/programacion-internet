@@ -81,6 +81,30 @@ header nav a {
     flex-grow: 1;
 }
 
+.usuario {
+    padding: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.usuario img {
+    border: 1px solid #ccc;
+    width: 20px;
+    border-radius: 10px;
+}
+
+.usuario:hover {
+    background: #E74C3C;
+}
+
 i {
     margin-right: 8px;
 }
@@ -89,9 +113,9 @@ header nav a:hover {
     background: #E74C3C;
 }
 
-.seccion-principal{
+.mi-cuenta {
     width: 95%;
-    padding: 90px 0px 33px 0px;
+    padding: 90px 20px 33px 20px;
     background: #fff;
     margin: 0 auto;
     display: -webkit-box;
@@ -105,17 +129,17 @@ header nav a:hover {
     -ms-flex-pack: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    align-items: center;
 }
 
 .menu-lateral {
     border: 1px solid #000;
-    width: 26%;
+    width: 23%;
+    position: fixed;
     background: #113E65;
     padding: 30px;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    position: fixed;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -124,17 +148,14 @@ header nav a:hover {
 
 .menu-lateral h3 {
     text-align: center;
-    background: rgba(0,0,0,0.3);
     color: #fff;
     letter-spacing: 10px;
     margin-bottom: 20px;
 }
 
-i {
-    margin-right: 10px;
-}
-
 .menu-lateral a {
+    display: block;
+    width: 100%;
     padding: 15px;
     color: #fff;
     letter-spacing: 3px;
@@ -144,69 +165,89 @@ i {
     background: #D35D08;
 }
 
-.productos {
-    margin-left: 350px;
+.informacion-usuario {
+    margin-left:  330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
-.cant-productos-mostrados {
-    width: 95%;
-    margin: 20px 30px;
-    border-bottom: 1px solid #ccc;
+.img-usuario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
 }
 
-table {
+.img-usuario figure{
+    width: 180px;
+    margin: 20px;
+}
+
+.img-usuario figure img{
+    border-radius: 90px;
+    width: 180px;
+}
+
+.img-usuario input {
+    margin-bottom: 10px;
+    width: 70%;
+}
+
+.info-usuario {
+    width: 100%;
+    margin: 20px;
+}
+
+.info-usuario h2{
+    border-bottom: 1px solid #ccc;    
+}
+
+.lista-datos {
+    margin-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.lista-datos ul li{
     margin-left: 30px;
+    padding: 5px;
 }
 
-.img-producto {
-    padding: 20px;
+.datos-personales {
+    width: 55%;
 }
 
-.descripcion-producto {
-    padding: 20px;
+.datos-personales h3{
+    padding: 3px;
 }
-
-.descripcion-producto ul {
-    margin-left: 20px;    
-}
-
-.descripcion-producto ul li{
-    padding: 5px;    
-}
-
-.descripcion-producto ul li p {
-    font-weight: 600;    
-}
-
-.precio-producto {
-    text-align: center;
-    padding: 20px;
-}
-
-.btn-carrito {
-    margin-top: 20px;    
-}
-
-.btn-carrito input {
-    color: #fff;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 5px 20px;
-    background: #BF8F1A
-
-}
-
-.btn-carrito input:hover {
-    background: #DAA420;
-    cursor: pointer;
-}
-
 
 footer {
     width: 100%;
     background: #113E65;
     padding: 20px;
-    z-index: 1;
 
     display: -webkit-box;
 
