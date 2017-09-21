@@ -78,7 +78,7 @@ Editor de textos:
 
 Navegador de internet.
 
-Pagina de pruebas: [https://www.google.com.mx](https://www.google.com.mx)
+Demo: [http://piezas-mkp.000webhostapp.com/](http://piezas-mkp.000webhostapp.com/)
 
 Autores.
 ------------------
