@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Mis pedidos</title>
+    <meta name="description" content="Compra/Venta de componentes electronicas nuevos o usados">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/estilos-mis-pedidos.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> -->
+    <script language="JavaScript" type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery.validationEngine-2.6.2.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/jquery.validationEngine-en.js"></script>
+    <link href="css/validationEngine.jquery.css" rel="stylesheet" media="screen">
+    <script language="JavaScript" type="text/javascript" src="js/jquery.dataTables-1.10.0.min.js"></script>
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet" media="screen">
+</head>
+
+<body>
+    <div class="contenedor-principal">
+        <header>
+            <div class="logo">
+                <figure>
+                    <img src="../img/logo.jpg" alt="Piezas MKP">
+                    <a href="#">Piezas MKP</a>
+                </figure>		
+            </div>
+            <nav>
+                <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
+                <a href="catalogo.html"><i class="fa fa-book" aria-hidden="true"></i>Catálogo</a>
+                <a href="carrito.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Carrito</a>
+                <div class="usuario">
+                    <img src="../img/usuario-pre.png" alt="">
+                    <a href="mi-cuenta.html">Admin</a>
+                </div>
+            </nav>
+        </header>
+
+
+        <section class="mis-pedidos">
+            <aside class="menu-lateral">
+                <h3>MI CUENTA</h3>
+                <a href="mi-cuenta.html"><i class="fa fa-user-circle" aria-hidden="true"></i>MI PERFIL</a>
+                <a href="admin-articulos.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i>ARTICULOS</a>
+                <a href="actualizar-info.html"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>ACTUALIZAR DATOS</a>
+            </aside>
+
+            <section class="pedidos">
+                <h3 class="titulo-mis-pedidos">Articulos</h3>
+
+                <div class="container">
+                    <div id="list">
+                        <table id="table" class="display"></table>
+                        <div class="form-group">
+                            <button type="submit" class="submit btn btn-primary" id="add">Add</button>
+                        </div>
+                    </div>
+                    <form class="form-horizontal" role="form" id="formID">
+                        <div class="form-group">
+                            <label for="seq" class="col-sm-2 control-label">ID</label>
+                            <div class="col-sm-6">
+                                <p class="form-control-static" id="seq"></p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control validate[required,custom[onlyLetterNumber]" id="name" placeholder="Product Name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="category" class="col-sm-2 control-label">Category</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control validate[required,custom[number]]" id="category" placeholder="Category">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="price" class="col-sm-2 control-label">Price</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control validate[required,custom[number]]" id="price" placeholder="Price">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="stock" class="col-sm-2 control-label">Stock</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control validate[required,custom[number]]" id="stock" placeholder="Stock">
+                            </div>
+                        </div>
+            <!-- <div class="form-group">
+                <label for="noise" class="col-sm-2 control-label">Noise</label>
+                <div class="col-sm-6">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" class="validate[required]" name="noise" value="noNoise">
+                            No noise
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" class="validate[required]" name="noise" value="noisy">
+                            Noisy
+                        </label>
+                    </div>
+                </div>
+            </div> -->
+            <div class="form-group">
+                <label for="description" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-6">
+                    <textarea id="description" class="form-control" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="imag" class="col-sm-2 control-label">Imagen</label>
+                <div class="col-sm-6">
+                    <input id="inputFileToLoad" type="file" onchange="encodeImageFileAsURL();" />
+                    <div id="imgTest">
+                        <img src="hola.png" alt="Imagen Product">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-8">
+                    <button class="btn btn-default" id="cancel">Cancel</button>
+                    <button type="submit" class="submit btn btn-primary" id="save">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>  
+</section>
+
+</section>
+
+<footer>
+    <section class="redes-sociales">
+        <nav>
+            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
+            <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
+            <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>			
+        </nav>
+        <div class="logo">
+            <figure>
+                <img src="../img/logo.jpg" alt="Piezas MKP">
+                <a href="#">Piezas MKP</a>
+            </figure>		
+        </div>
+    </section>
+    <section class="derechos-reservados">
+        <p>© 2017, Piezas MKP. Todos los derechos reservados.</p>
+    </section>
+</footer>
+</div>
+
+</body>
+
+<script>
+    var editor; // use a global for the submit and return data rendering in the examples
+    var formId="sample";
+    var oTable;
+    $(document).ready(function(){
+        $('#formID').hide();
+        var seq=createTable();
+        $('#seq').text(seq);
+        $("#formID").validationEngine('attach',
+        {
+            onValidationComplete: function(form, status){
+                if (!verifyLocalStorageCapability) {
+                    alert("Local Storage is not supported.");
+                    return;
+                }
+                if (status) {
+                    save();
+                    location.reload(true);
+                }
+            }
+        });
+    });
+
+    function createTable() {
+        var dataSet=[];
+        var skip=0;
+        var seq=0;
+        var index=0;
+        var icons  ='<span class="glyphicon glyphicon-edit">&nbsp;</span><span class="glyphicon glyphicon-remove"></span>';
+        var imagen ='<img src="hola.png" alt="Imagen Product">'
+
+        while ( skip<2 ) {
+            var key=formId+"_"+index;
+            var json=localStorage.getItem(key);
+            if ( json==null || json=="null" || json=="[object Object]" ) {
+                index=index+1;
+                skip=skip+1;
+                continue;
+            }
+            var object=null;
+            object=JSON.parse(json);
+            var description= object.description;
+            description=description.replace(/\n/g, "<br>");
+            dataSet[seq]=[index, icons, object.name, object.category, object.price, object.stock, description,imagen];
+            index=index+1;
+            seq=seq+1;
+        }
+
+        oTable=$('#table').dataTable({
+            "data": dataSet,
+            "columns": [
+            { "title": "Id", "class": "center" },
+            { "title": "", "class": "center" },
+            { "title": "Name" },
+            { "title": "Category" },
+            { "title": "Price", "class": "center" },
+            { "title": "Stock", "class": "center" },
+            { "title": "Description" },
+            { "title": "Imag" }
+            ]
+        });
+
+        $('#table tbody').on( 'click', '.glyphicon-remove', function () {
+            var row = $(this).parents('tr');
+            var seq = row.children()[0].innerHTML;
+            if(window.confirm('Are you sure to delete? Id='+seq)){
+                var key=formId+"_"+seq;
+                localStorage.removeItem(key);
+                restoreItems();
+                location.reload(true);
+            }
+        } );
+
+        $('#add').on( 'click', function () {
+            $('#list').hide();
+            $('#seq').text(seq);
+            $('#formID').show();
+        } );
+
+        $('#cancel').on( 'click', function () {
+            location.reload(true);
+        } );
+
+        $('#table tbody').on( 'click', '.glyphicon-edit', function () {
+            $('#list').hide();
+            var rows = $(this).parents('tr').children();
+            $('#seq').text(rows[0].innerHTML);
+            $('#name').val(rows[2].innerHTML);
+            $('#category').val(rows[3].innerHTML);
+            $('#price').val(rows[4].innerHTML);
+            $('#stock').val([rows[5].innerHTML]);
+            $('#description').val((rows[6].innerHTML).replace(/(<br>)/g, "\n"));
+            $('#formID').show();
+        } );
+
+        return seq;
+    }
+
+    function save() {
+        var d=new Date();
+        var timestamp=d.getFullYear()+"/"+("0"+(d.getMonth()+1)).slice(-2)+"/"+("0"+(d.getDate())).slice(-2)+" "+("0"+(d.getHours())).slice(-2)+":"+("0"+(d.getMinutes())).slice(-2)+":"+("0"+(d.getSeconds())).slice(-2)+"."+("0"+(d.getMilliseconds())).slice(-2);
+        var seq=$('#seq').text();
+        if ( isNaN(seq) ) { seq=0; }
+        var key=formId+"_"+seq;
+        var object={
+            "name":$("#name").val(),
+            "category": $("#category").val(),
+            "price": $("#price").val(),
+            "stock": $("#stock").val(),
+            "description": $("#description").val(),
+            "imgTest": $("#imgTest").val()
+        }
+        localStorage.setItem(key, JSON.stringify(object));
+        alert("Saved!")
+    }
+
+    function restoreItems() {
+        var skip=0;
+        var index=1;
+        var previous=JSON.parse(localStorage.getItem(formId+"_0"));
+        var prevIndex=0;
+        while ( skip<2 ) {
+            var key=formId+"_"+index;
+            var object=JSON.parse(localStorage.getItem(key));
+            if ( previous==null && object==null ) {
+                skip=skip+1;
+                prevIndex=index;
+                index=index+1;
+                continue;
+            }
+            if ( previous==null && object!=null ) {
+                localStorage.setItem(formId+"_"+prevIndex, JSON.stringify(object));
+                localStorage.setItem(key, null);
+                prevIndex=index;
+                index=index+1;
+                continue;
+            }
+            previous=object;
+            prevIndex=index;
+            index=index+1;
+        }
+    };
+
+
+    function verifyLocalStorageCapability() {
+        if (!window.localStorage) {
+            return false;
+        }
+        return true;
+    }
+
+    function encodeImageFileAsURL() {
+
+        var filesSelected = document.getElementById("inputFileToLoad").files;
+        if (filesSelected.length > 0) {
+          var fileToLoad = filesSelected[0];
+
+          var fileReader = new FileReader();
+
+        fileReader.onload = function(fileLoadedEvent) {
+        var srcData = fileLoadedEvent.target.result; // <--- data: base64
+
+        var newImage = document.createElement('img');
+
+        newImage.src = srcData;
+        newImage.high= "100px";
+
+        document.getElementById("imgTest").innerHTML = newImage.outerHTML;
+        alert("Converted Base64 version is " + document.getElementById("imgTest").innerHTML);
+        console.log("Converted Base64 version is " + document.getElementById("imgTest").innerHTML);
+    }
+    fileReader.readAsDataURL(fileToLoad);
+        }
+    }
+</script>
+
+</html>
