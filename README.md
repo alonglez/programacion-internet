@@ -80,6 +80,16 @@ Navegador de internet.
 
 Demo: [http://piezas-mkp.000webhostapp.com/](http://piezas-mkp.000webhostapp.com/)
 
+Links: 
+https://piezas-mkp.000webhostapp.com/rec-pass-enviado.html
+
+Páginas para el usuario:
+https://piezas-mkp.000webhostapp.com/paginas-usuario/mi-cuenta.html
+
+Páginas para el admin:
+https://piezas-mkp.000webhostapp.com/paginas-admin/mi-cuenta.html
+        
+
 Autores.
 ------------------
 - Cruz Gonzalez Jose Alonso.
