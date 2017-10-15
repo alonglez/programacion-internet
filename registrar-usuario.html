@@ -7,6 +7,10 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos-registrar-usuario.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/valida-registro.js"></script>    
+
         <title>Regístrate</title>
     </head>
     <body>
@@ -27,19 +31,19 @@
             </header>
 
             <section class="formulario-registro">
-                <form action="">
+                <form action="" id="form-registro">
                     <h2>REGÍSTRATE</h2>
                     <div class="contenedor-inputs">
-                        <input type="text" name="" placeholder= "&#9998;  Nombre" class="input-48">
-                        <input type="text" name="" placeholder="&#9998;  Apellidos" class="input-48">
-                        <input type="text" name="" placeholder="&#128274;  Usuario" class="input-100">
-                        <input type="password" name="" placeholder="&#128273;  Contraseña" class="input-48">
-                        <input type="password" name="" placeholder="&#128273;  Confirmar contraseña" class="input-48">
-                        <input type="email" name="" placeholder="&#128231;  Correo electrónico" class="input-100">
-                        <input type="email" name="" placeholder="&#128231;  Confirmar correo electrónico" class="input-100">
-                        <input type="text" name="" placeholder="&#127968;  Dirección" class="input-48">
-                        <input type="text" name="" placeholder="&#128238;  Código postal" class="input-48">
-                        <input type="submit" name="" value="REGISTRAR">	
+                        <input type="text" name="nombre" placeholder= "&#9998;  Nombre" class="input-48">
+                        <input type="text" name="apellidos" placeholder="&#9998;  Apellidos" class="input-48">
+                        <input type="text" name="usuario" placeholder="&#128274;  Usuario" class="input-100">
+                        <input type="password" name="contraseña" placeholder="&#128273;  Contraseña" class="input-48">
+                        <input type="password" name="confirmarContraseña" placeholder="&#128273;  Confirmar contraseña" class="input-48">
+                        <input type="email" name="email" placeholder="&#128231;  Correo electrónico" class="input-100">
+                        <input type="email" name="confirmarEmail" placeholder="&#128231;  Confirmar correo electrónico" class="input-100">
+                        <input type="text" name="direccion" placeholder="&#127968;  Dirección" class="input-48">
+                        <input type="text" name="cp" placeholder="&#128238;  Código postal" class="input-48">
+                        <input type="submit" name="registrar" value="REGISTRAR">	
                     </div>			
                 </form>
             </section>
