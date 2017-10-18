@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos-registrar-usuario.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script type="text/javascript" src="js/validarRegistro.js"></script>
         <title>Regístrate</title>
@@ -33,15 +32,15 @@
                 <form action="" >
                     <h2>REGÍSTRATE</h2>
                     <div class="contenedor-inputs">
-                        <input type="text" id="nombres" name="nombres" placeholder= "&#9998;  Nombre" class="input-48" >
-                        <input type="text" id="apellidos" name="apellidos" placeholder="&#9998;  Apellidos" class="input-48">
-                        <input type="text" id="usuario" name="usuario" placeholder="&#128274;  Usuario" class="input-100">
-                        <input type="password" id="contrasena" name="contrasena" placeholder="&#128273;  Contraseña" class="input-48">
-                        <input type="password" id="contrasenaConfirmacion" name="contrasenaConfirmacion" placeholder="&#128273;  Confirmar contraseña" class="input-48">
-                        <input type="email" id="correo" name="correo" placeholder="&#128231;  Correo electrónico" class="input-100">
-                        <input type="email" id="correoConfirmacion" name="correoConfirmacion" placeholder="&#128231;  Confirmar correo electrónico" class="input-100">
-                        <input type="text" id="direccion" name="direccion" placeholder="&#127968;  Dirección" class="input-48">
-                        <input type="text" id="codigoPostal" name="codigoPostal" placeholder="&#128238;  Código postal" class="input-48">
+                        <input type="text" id="nombres" name="nombres" placeholder= "&#9998;  Nombre" class="input-48" onchange="cambioFondo('nombres')">
+                        <input type="text" id="apellidos" name="apellidos" placeholder="&#9998;  Apellidos" class="input-48" onchange="cambioFondo('apellidos')">
+                        <input type="text" id="usuario" name="usuario" placeholder="&#128274;  Usuario" class="input-100" onchange="cambioFondo('usuario')">
+                        <input type="password" id="contrasena" name="contrasena" placeholder="&#128273;  Contraseña" class="input-48" onchange="cambioFondo('contrasena')">
+                        <input type="password" id="contrasenaConfirmacion" name="contrasenaConfirmacion" placeholder="&#128273;  Confirmar contraseña" class="input-48" onchange="cambioFondo('contrasenaConfirmacion')">
+                        <input type="email" id="correo" name="correo" placeholder="&#128231;  Correo electrónico" class="input-100"onchange="cambioFondo('correo')" >
+                        <input type="email" id="correoConfirmacion" name="correoConfirmacion" placeholder="&#128231;  Confirmar correo electrónico" class="input-100"onchange="cambioFondo('correoConfirmacion')" >
+                        <input type="text" id="direccion" name="direccion" placeholder="&#127968;  Dirección" class="input-48" onchange="cambioFondo('direccion')" >
+                        <input type="text" id="codigoPostal" name="codigoPostal" placeholder="&#128238;  Código postal" class="input-48" onchange="cambioFondo('codigoPostal')">
                         <input type="submit" id="registrar" name="" value="REGISTRAR">
                     </div>
                 </form>
