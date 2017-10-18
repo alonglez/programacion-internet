@@ -37,8 +37,6 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -65,8 +63,6 @@ header nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -79,6 +75,16 @@ header nav a {
     -webkit-box-flex: 1;
     -ms-flex-positive: 1;
     flex-grow: 1;
+}
+
+.boton-menu {
+    display: none;
+    margin-right: 10px;
+}
+
+.boton-menu i {
+    font-size: 30px;
+    color: #fff;
 }
 
 i {
@@ -210,14 +216,14 @@ footer .redes-sociales{
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 footer .redes-sociales-movil {
@@ -240,176 +246,95 @@ footer .derechos-reservados {
     text-align: center;
 }
 
-@media (min-width: 663px) and (max-width: 1023px) {
-    header {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
+@media (max-width: 1024px) {
     header nav {
-        width: 100%;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .formulario-registro {
-        margin-top: 50px;
-        margin-bottom: -30px;
-        width: 100%;
-    }
-
-    form {
-        width: 95%;
+        width: 60%;
     }
 
 }
 
-@media (min-width: 1024px) and (max-width: 1364px) {
+@media (max-width: 800px) {
     header nav {
-        width: 60%;        
-    }
-
-    form {
-        width: 90%;
-    }
-
-}
-
-@media (min-width: 412px) and (max-width: 662px) {
-    header {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
-    header nav {
-        width: 100%;        
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
-    .formulario-registro {
-        padding: 150px 0px;
-        padding-bottom: 0px;
+        background: #285174;
         width: 80%;
+        height: 30%;
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 24%;
+        left: -100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .boton-menu {
+        display: block;
     }
 
     form {
         width: 100%;
     }
-
-    .contenedor-inputs {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .input-48 {
-        width: 48%;
-    }
-
-    footer .redes-sociales-movil {
-        display: inline-block;
-    }
-
-    footer nav .redes-sociales-movil a {
-        padding: 5px;
-        font-size: 25px;
-    }
-
-    footer .redes-sociales-escritorio {
-        display: none;
-    }
-
-    footer .derechos-reservados {
-        margin-top: 5px;
-        font-size: 15px;
-    }
 }
 
-@media (max-width: 411px) {
-    header {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-
+@media (max-width: 500px) {
     header nav {
-        width: 100%;        
-    }
-
-    .logo {
-        margin-bottom: 10px;
+        margin-top: 34%;
     }
 
     .formulario-registro {
-        padding: 150px 0px;
-        padding-bottom: 0px;
-        width: 90%;
-    }
-
-    .formulario-registro h2 {
-        font-size: 30px;        
-    }
-
-    form {
-        width: 100%;
-    }
-
-    .contenedor-inputs {
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
-    .input-48 {
-        width: 48%;
-    }
-
-    footer .redes-sociales-movil {
-        display: inline-block;
-    }
-
-    footer nav .redes-sociales-movil a {
-        padding: 5px;
-        font-size: 25px;
+        padding: 90px 30px 40px 30px;        
     }
 
     footer .redes-sociales-escritorio {
         display: none;
     }
 
+    footer .redes-sociales-movil {
+        display: block;
+    }
+
+    footer .redes-sociales-movil i {
+        margin: 0px;        
+    }
+
     footer .derechos-reservados {
-        margin-top: 5px;
-        font-size: 11px;
+        font-size: 14px
     }
 
-    footer .logo img {
-        margin-top: 8px;
-        width: 30px;
-        vertical-align: top;
-    }
+    @media (max-width: 375px) {
+        .formulario-registro {
+            padding: 55px 0px 0px 0px;
+        }
 
-    footer .logo a {
-        margin-left: 5px;
-        color: #fff;
-        font-size: 10px;
-        line-height: 35px;
+        footer .redes-sociales-movil {
+            margin-bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        footer .redes-sociales-movil i {
+            font-size: 40px;            
+        }
+
+        footer .logo {
+            width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        footer .derechos-reservados {
+            font-size: 10px
+        }
     }
 }
+
+
 
 input.error{
     border: 1px solid red;
@@ -420,12 +345,12 @@ input.error{
     font-style: italic;
 }
 /*.error:before{
-    content: '';
-    border-top: 0px solid transparent;
-    border-bottom: 15px solid #BC1010;
-    border-right: 11px solid transparent;
-    border-left: 12px solid transparent;
-    left: 69px;
-    position: absolute;
-    top: -16px;
+content: '';
+border-top: 0px solid transparent;
+border-bottom: 15px solid #BC1010;
+border-right: 11px solid transparent;
+border-left: 12px solid transparent;
+left: 69px;
+position: absolute;
+top: -16px;
 }*/
