@@ -209,3 +209,8 @@
         return [curtop];
         }
     }
+
+    function cambioFondo(obj){
+      var objeto = document.getElementById(obj);
+      objeto.style.backgroundColor = '#091E30';
+    }
