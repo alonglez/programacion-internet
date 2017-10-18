@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="css/estilos-actualizar-info.css">
         <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="../js/validarActualizacion.js"></script>
     </head>
 
     <body>
@@ -18,7 +20,7 @@
                     <figure>
                         <img src="../img/logo.jpg" alt="Piezas MKP">
                         <a href="#">Piezas MKP</a>
-                    </figure>		
+                    </figure>
                 </div>
                 <nav>
                     <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
@@ -41,17 +43,17 @@
 
                 <div class="form-actualizar-info">
                     <h2>ACTUALIZAR DATOS</h2>
-                    <form action="">                        
+                    <form action="">
                         <div class="contenedor-inputs">
-                            <input type="text" name="" placeholder= "&#9998;  Nombre" class="input-48">
-                            <input type="text" name="" placeholder="&#9998;  Apellidos" class="input-48">
-                            <input type="password" name="" placeholder="&#128273;  Contraseña vieja" class="input-48">
-                            <input type="password" name="" placeholder="&#128273;  Nueva contraseña" class="input-48">
-                            <input type="password" name="" placeholder="&#128273;  Confirmar nueva contraseña" class="input-100">
-                            <input type="text" name="" placeholder="&#127968;  Dirección" class="input-48">
-                            <input type="text" name="" placeholder="&#128238;  Código postal" class="input-48">
-                            <input type="submit" name="" value="ACTUALIZAR">	
-                        </div>			
+                            <input type="text" id="nombres" name="nombres"  placeholder= "&#9998;  Nombre" class="input-48">
+                            <input type="text" id="apellidos" name="apellidos"  placeholder="&#9998;  Apellidos" class="input-48">
+                            <input type="password" id="contrasenaVieja" name="contrasenaVieja"  placeholder="&#128273;  Contraseña vieja" class="input-48">
+                            <input type="password" id="contrasenaNueva" name="contrasenaNueva"   placeholder="&#128273;  Nueva contraseña" class="input-48">
+                            <input type="password" id="contrasenaConfirmar" name="contrasenaConfirmar" placeholder="&#128273;  Confirmar nueva contraseña" class="input-100">
+                            <input type="text" id="direccion" name="direccion"  placeholder="&#127968;  Dirección" class="input-48">
+                            <input type="text" id="codigoPostal" name="codigoPostal"  placeholder="&#128238;  Código postal" class="input-48">
+                            <input type="submit" id="actualizar" value="ACTUALIZAR">
+                        </div>
                     </form>
                 </div>
 
@@ -63,13 +65,13 @@
                         <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i>Facebook</a>
                         <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i>Twitter</a>
                         <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
-                        <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>			
+                        <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>
                     </nav>
                     <div class="logo">
                         <figure>
                             <img src="../img/logo.jpg" alt="Piezas MKP">
                             <a href="#">Piezas MKP</a>
-                        </figure>		
+                        </figure>
                     </div>
                 </section>
                 <section class="derechos-reservados">
