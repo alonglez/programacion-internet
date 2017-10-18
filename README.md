@@ -94,3 +94,4 @@ Autores.
 ------------------
 - Cruz Gonzalez Jose Alonso.
 - Rodriguez Loza Sergio Alain.
+- Sandoval Torres Iván de Jesús
