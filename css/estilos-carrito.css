@@ -81,6 +81,17 @@ header nav a {
     flex-grow: 1;
 }
 
+.boton-menu {
+    display: none;
+    margin-right: 10px;
+}
+
+.boton-menu i {
+    font-size: 30px;
+    color: #fff;
+}
+
+
 i {
     margin-right: 8px;
 }
@@ -278,3 +289,223 @@ footer .derechos-reservados {
     padding: 5px;
     text-align: center;
 }
+
+footer {
+    width: 100%;
+    background: #113E65;
+    padding: 20px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .redes-sociales-movil {
+    display: none;
+}
+
+footer .redes-sociales nav a {
+    color: #fff;
+    padding: 15px;
+}
+
+footer .redes-sociales nav a:hover{
+    background: #E74C3C;
+}
+
+footer .derechos-reservados {
+    width: 100%;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        width: 60%;
+    }
+
+    .carrito-compras {
+        width: 85%
+    }
+}
+
+@media (max-width: 800px) {
+    header nav {
+        background: #285174;
+        width: 80%;
+        height: 30%;
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 24%;
+        left: -100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .boton-menu {
+        display: block;
+    }
+
+    .carrito-compras {
+        width: 100%;
+        padding: 90px 25px;
+    }
+
+}
+
+@media (max-width: 500px) {
+    header nav {
+        margin-top: 34%;
+    }
+
+    .carrito-compras {
+        width: 100%;
+        padding: 90px 0px;
+    }
+
+    .encabezado-carrito {
+        margin-top: -20px;
+    }
+
+    .cuerpo-carrito {
+        padding: 10px 0px;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .img-producto {
+        padding: 10px;
+    }
+
+    .img-producto img {
+        width: 100px;
+    }
+
+    .txt-producto {
+        padding: 10px;
+    }
+
+    .cantidad-producto {
+        padding: 10px;
+    }
+
+    .precio-producto {
+        padding: 10px;
+    }
+
+    .total-carrito {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;    
+    }
+
+    .total-carrito h2 {
+        font-size: 20px;
+        padding: 15px;
+        background: #D35D08;
+        border-radius: 5px;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+    .btn-footer-carrito {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 0px; 
+        margin-bottom: -70px;
+    }
+
+    .btn-footer-carrito a {
+        background: #209D4A;
+        padding: 20px;
+        font-weight: 600;
+        border-radius: 5px;
+        letter-spacing: 5px;
+        margin: 10px;
+        color: #fff;
+    }
+
+
+    footer .redes-sociales-escritorio {
+        display: none;
+    }
+
+    footer .redes-sociales-movil {
+        display: block;
+    }
+
+    footer .redes-sociales-movil i {
+        margin: 0px;        
+    }
+
+    footer .derechos-reservados {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 375px) {
+    header nav {
+        height: 35%;
+        margin-top: 40%;
+    }
+    
+    footer .redes-sociales-movil {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .redes-sociales-movil i {
+        font-size: 40px;            
+    }
+
+    footer .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .derechos-reservados {
+        font-size: 10px
+    }
+}
+
