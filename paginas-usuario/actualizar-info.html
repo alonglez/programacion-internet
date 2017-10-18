@@ -45,13 +45,13 @@
                     <h2>ACTUALIZAR DATOS</h2>
                     <form action="">
                         <div class="contenedor-inputs">
-                            <input type="text" id="nombres" name="nombres"  placeholder= "&#9998;  Nombre" class="input-48">
-                            <input type="text" id="apellidos" name="apellidos"  placeholder="&#9998;  Apellidos" class="input-48">
-                            <input type="password" id="contrasenaVieja" name="contrasenaVieja"  placeholder="&#128273;  Contraseña vieja" class="input-48">
-                            <input type="password" id="contrasenaNueva" name="contrasenaNueva"   placeholder="&#128273;  Nueva contraseña" class="input-48">
-                            <input type="password" id="contrasenaConfirmar" name="contrasenaConfirmar" placeholder="&#128273;  Confirmar nueva contraseña" class="input-100">
-                            <input type="text" id="direccion" name="direccion"  placeholder="&#127968;  Dirección" class="input-48">
-                            <input type="text" id="codigoPostal" name="codigoPostal"  placeholder="&#128238;  Código postal" class="input-48">
+                            <input type="text" id="nombres" name="nombres"  placeholder= "&#9998;  Nombre" class="input-48" onchange="cambioFondo('nombres')">
+                            <input type="text" id="apellidos" name="apellidos"  placeholder="&#9998;  Apellidos" class="input-48" onchange="cambioFondo('apellidos')">
+                            <input type="password" id="contrasenaVieja" name="contrasenaVieja"  placeholder="&#128273;  Contraseña vieja" class="input-48" onchange="cambioFondo('contrasenaVieja')">
+                            <input type="password" id="contrasenaNueva" name="contrasenaNueva"   placeholder="&#128273;  Nueva contraseña" class="input-48" onchange="cambioFondo('nuevaContrasena')">
+                            <input type="password" id="contrasenaConfirmar" name="contrasenaConfirmar" placeholder="&#128273;  Confirmar nueva contraseña" class="input-100" onchange="cambioFondo('contrasenaConfirmar')">
+                            <input type="text" id="direccion" name="direccion"  placeholder="&#127968;  Dirección" class="input-48" onchange="cambioFondo('direccion')">
+                            <input type="text" id="codigoPostal" name="codigoPostal"  placeholder="&#128238;  Código postal" class="input-48" onchange="cambioFondo('codigoPostal')">
                             <input type="submit" id="actualizar" value="ACTUALIZAR">
                         </div>
                     </form>
