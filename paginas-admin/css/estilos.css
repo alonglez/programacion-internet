@@ -113,6 +113,24 @@ header nav a:hover {
     background: #E74C3C;
 }
 
+.boton-menu {
+    display: none;
+    margin-right: 10px;
+}
+
+.boton-menu i {
+    font-size: 30px;
+    color: #fff;
+}
+
+i {
+    margin-right: 8px;
+}
+
+header nav a:hover {
+    background: #E74C3C;
+}
+
 .seccion-principal{
     width: 95%;
     padding-top: 60px;
@@ -244,6 +262,10 @@ footer .redes-sociales{
     align-items: center;
 }
 
+footer .redes-sociales-movil {
+    display: none;
+}
+
 footer .redes-sociales nav a {
     color: #fff;
     padding: 15px;
@@ -259,3 +281,136 @@ footer .derechos-reservados {
     padding: 5px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    header nav {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    header nav {
+        background: #285174;
+        width: 80%;
+        height: 15%;
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 14%;
+        left: -100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .usuario {
+        align-self: flex-start;
+    }
+
+    .boton-menu {
+        display: block;
+    }
+}
+
+@media (max-width: 500px) {
+    header nav {
+        margin-top: 22%;
+        height: 18%
+    }
+
+    .seccion-principal {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .seccion-principal h2 {
+        text-align: center;
+    }
+        .banner {
+        margin-top: -6px;
+    }
+
+    .mas-vendidos {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .mas-vendidos .producto {
+        width: 100%;
+    }
+
+    .mas-vendidos .producto img {  
+        width: 20%;
+    }
+
+    .mas-vendidos .producto a {
+        margin: 0px 15px 0px 0px;
+    }
+
+    footer .redes-sociales-escritorio {
+        display: none;
+    }
+
+    footer .redes-sociales-movil {
+        display: block;
+    }
+
+    footer .redes-sociales-movil i {
+        margin: 0px;        
+    }
+
+    footer .derechos-reservados {
+        font-size: 14px
+    }
+}
+
+@media (max-width: 375px) {
+    header nav {
+        background: #285174;
+        width: 80%;
+        margin-top: 35%;
+        height: 31%;
+    }
+
+    .banner {
+        margin-top: -6px;
+    }
+
+    .seccion-principal h2 {
+        font-size: 20px
+    }
+
+    footer .redes-sociales-movil {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .redes-sociales-movil i {
+        font-size: 40px;            
+    }
+
+    footer .logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    footer .derechos-reservados {
+        font-size: 10px
+    }
