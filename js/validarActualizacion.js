@@ -22,12 +22,14 @@
               swal("","El campo del nombre no puede estar vacío.","error").then((value) => {
                 nombres.focus();
                 nombres.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("nombres"))-100);
                 });
               return false;
             }else if(!validacionLetras.test(nombres.value)){
               swal("","El campo del nombre debe contener solo letras.","error").then((value) => {
                 nombres.focus();
                 nombres.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("nombres"))-100);
                 });
               return false;
             }else{
@@ -39,12 +41,14 @@
               swal("","El campo de los apellidos no puede estar vacío.","error").then((value) => {
                 apellidos.focus();
                 apellidos.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("apellidos"))-100);
                 });
               return false;
             }else if(!validacionLetras.test(apellidos.value)){
               swal("","El campo de los apellidos debe contener solo letras.","error").then((value) => {
                 apellidos.focus();
                 apellidos.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("apellidos"))-100);
                 });
               return false;
             }else{
@@ -56,6 +60,7 @@
                 swal("","Debe ingresar su contraseña anterior.","error").then((value) => {
                   contrasenaVieja.focus();
                   contrasenaVieja.style.backgroundColor = '#FF0000';
+                  window.scroll(0,findPos(document.getElementById("contrasenaVieja"))-100);
                   });
                 return false;
               }else{
@@ -68,18 +73,21 @@
               swal("","El campo de la nueva contraseña no puede estar vacío.","error").then((value) => {
                 contrasenaNueva.focus();
                 contrasenaNueva.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("contrasenaNueva"))-100);
                 });
               return false;
             }else if(contrasenaNueva.value.length<6){
               swal("","La nueva contraseña debe ser de por lo menos 6 caracteres.","error").then((value) => {
                 contrasenaNueva.focus();
                 contrasenaNueva.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("contrasenaNueva"))-100);
                 });
               return false;
             }else if(!validacionContrasena.test(contrasenaNueva.value)){
               swal("","La contraseña debe incluir al menos 1 mayúscula, 1 minúscula y un número. No se permiten espacios en blanco.","error").then((value) => {
                 contrasenaNueva.focus();
                 contrasenaNueva.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("contrasenaNueva"))-100);
                 });
               return false;
             }else{
@@ -91,12 +99,14 @@
               swal("","Debes confirmar tu contraseña.","error").then((value) => {
                 contrasenaConfirmacion.focus();
                 contrasenaConfirmacion.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("contrasenaConfirmacion"))-100);
                 });
               return false;
             }else if( contrasenaNueva.value != contrasenaConfirmacion.value ) {
               swal("","Las contraseñas no coinciden.","error").then((value) => {
                 contrasenaConfirmacion.focus();
                 contrasenaConfirmacion.style.backgroundColor = '#FF0000';
+                window.scroll(0,findPos(document.getElementById("contrasenaConfirmacion"))-100);
                 });
               return false;
             }else{
@@ -109,6 +119,7 @@
                 swal("","El campo dirección no puede estar vacío.","error").then((value) => {
                   direccion.focus();
                   direccion.style.backgroundColor = '#FF0000';
+                  window.scroll(0,findPos(document.getElementById("direccion"))-100);
                   });
                 return false;
               }else{
@@ -120,16 +131,28 @@
                 swal("","El campo del codigo postal no puede estar vacío.","error").then((value) => {
                   codigoPostal.focus();
                   codigoPostal.style.backgroundColor = '#FF0000';
+                  window.scroll(0,findPos(document.getElementById("codigoPostal"))-100);
                   });
                 return false;
               }else if(!validacionCodigoPostal.test(codigoPostal.value)){
                 swal("","El código postal introducido es inválido.","error").then((value) => {
                   codigoPostal.focus();
                   codigoPostal.style.backgroundColor = '#FF0000';
+                  window.scroll(0,findPos(document.getElementById("codigoPostal"))-100);
                   });
                 return false;
               }else{
                 codigoPostal.style.backgroundColor = '#091E30';
               }
+        }
+    }
+
+    function findPos(obj) {
+        var curtop = 0;
+        if (obj.offsetParent) {
+            do {
+                curtop += obj.offsetTop;
+            } while (obj = obj.offsetParent);
+        return [curtop];
         }
     }
