@@ -187,6 +187,10 @@ table {
 .img-producto {
     padding: 20px;
 }
+.num-pedido {
+    text-align: center;
+    padding: 20px;
+}
 
 .descripcion-producto {
     width: 40%;
@@ -205,12 +209,16 @@ table {
     font-weight: 600;    
 }
 
-.precio-producto {
+.cantidad-producto {
+    text-align: center;
+    padding: 20px;
+}
+.total-producto {
     text-align: center;
     padding: 20px;
 }
 
-.fecha-pedido {
+.precio-producto {
     text-align: center;
     padding: 20px;
 }
@@ -219,6 +227,25 @@ table {
     text-align: center;
     padding: 20px;
     color: #169766;
+}
+
+.total-pedido-general {
+    text-align: center;
+    padding: 20px;
+}
+
+.total-pedido {
+    width: 100%;
+    text-align: right;
+    margin-top: 20px;    
+}
+
+.total-pedido h2 {
+    padding: 15px;
+    background: #D35D08;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 5px;
 }
 
 footer {
