@@ -13,7 +13,7 @@ Funcionalidades.
 Dentro de las principales funcionalidades del proyecto tenemos las siguientes:
 
 - El usuario podrá registrarse en la página.
-- El usuario podrá recuperar su contraseña en caso de que la olvide.
+- El usuario podrá generar una nueva contraseña en caso de que la olvide.
 - El usuario podrá navegar dentro de las diferentes categorías de productos.
 - El usuario podrá buscar productos.
 - El usuario podrá agregar productos al carrito de compras.
@@ -38,11 +38,11 @@ El usuario podrá registrarse en la página. La información que se le solicitar
 
 El llenado de todos los campos será necesario para que se lleve a cabo el registro.
 
-#### Recuperación de cuenta. ####
+#### Recuperación de acceso a cuenta. ####
 
-En caso de que el usuario haya olvidado su contraseña podrá recuperarla ingresando en el apartado de recuperación de contraseña dentro del inicio de sesión, ingresando su correo con el cual se registro.
+En caso de que el usuario haya olvidado su contraseña podrá recuperar el acceso a su cuenta generando una nueva contraseña en el apartado de <Olvidaste tu contraseña?> dentro del inicio de sesión, ingresando su correo con el cual se registro.
 
-Se le enviará a su correo las indicaciones necesarias para poder restablecer su contraseña.
+Se le enviará a su correo las indicaciones necesarias para poder obtener una nueva contraseña de acceso.
 
 #### Navegación en categorías. ####
 
