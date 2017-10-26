@@ -81,6 +81,17 @@ header nav a {
     flex-grow: 1;
 }
 
+.boton-menu {
+    display: none;
+    margin-right: 10px;
+}
+
+.boton-menu i {
+    font-size: 30px;
+    color: #fff;
+}
+
+
 i {
     margin-right: 8px;
 }
@@ -88,6 +99,27 @@ i {
 header nav a:hover {
     background: #E74C3C;
 }
+
+.boton-categorias {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 30px;
+    color: #113E65;
+    font-weight: 600;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none;
+}
+
+.boton-categorias i {
+    font-size: 30px;
+    color: #113E65;
+}
+
 
 .seccion-principal{
     width: 95%;
@@ -112,6 +144,7 @@ header nav a:hover {
     width: 26%;
     background: #113E65;
     padding: 30px;
+    z-index: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -145,7 +178,7 @@ i {
 }
 
 .productos {
-    margin-left: 350px;
+    margin-left: 30%;
 }
 
 .cant-productos-mostrados {
@@ -206,8 +239,7 @@ footer {
     width: 100%;
     background: #113E65;
     padding: 20px;
-    z-index: 1;
-
+    z-index: 2;
     display: -webkit-box;
 
     display: -ms-flexbox;
@@ -253,4 +285,143 @@ footer .derechos-reservados {
     font-weight: 600;
     padding: 5px;
     text-align: center;
+}
+
+footer {
+    width: 100%;
+    background: #113E65;
+    padding: 20px;
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+footer .redes-sociales{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+footer .redes-sociales-movil {
+    display: none;
+}
+
+footer .redes-sociales nav a {
+    color: #fff;
+    padding: 15px;
+}
+
+footer .redes-sociales nav a:hover{
+    background: #E74C3C;
+}
+
+footer .derechos-reservados {
+    width: 100%;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    header nav {
+        width: 60%;
+    }
+
+    .seccion-principal {
+        width: 100%;
+    }
+
+    .productos {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    header nav {
+        background: #285174;
+        width: 80%;
+        height: 30%;
+        position: fixed;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 24%;
+        left: -100%;
+    }
+
+    header nav a {
+        width: 100%;
+        text-align: left;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .boton-menu {
+        display: block;
+    }
+
+    .seccion-principal{
+        width: 100%;
+        padding: 50px 0px 30px 0px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .boton-categorias {
+        display: block;
+    }
+
+    .menu-lateral {
+        padding: 10px;
+        width: 60%;
+        margin-left: 4%;
+        margin-top: 10%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: fixed;
+        border: none;
+        left: -100%;
+        background: #285174;
+    }
+
+    .menu-lateral h3 {
+        display: none;
+    }
+
+    .menu-lateral a {
+        padding: 10px;
+        letter-spacing: 1px;
+        border-bottom: 1px solid rgba(255,255,255,0.3);
+    }
+
+    .productos {
+        margin-left: 0%;
+    }
+
 }
