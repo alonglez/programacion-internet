@@ -332,6 +332,11 @@ footer .derechos-reservados {
             font-size: 10px
         }
     }
+	
+	@media (max-width: 320px) {
+	header nav {
+		height: 40%;
+	}
 }
 
 
