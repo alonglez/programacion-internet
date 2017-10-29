@@ -8,6 +8,8 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/estilos-login.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script type="text/javascript" src="js/validarLogin.js"></script>
         <title>Inicia sesión</title>
     </head>
     <body>
@@ -17,7 +19,7 @@
                     <figure>
                         <img src="img/logo.jpg" alt="Piezas MKP">
                         <a href="#">Piezas MKP</a>
-                    </figure>		
+                    </figure>
                 </div>
                 <nav>
                     <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a>
@@ -31,11 +33,11 @@
             <section class="formulario-login">
                 <form action="">
                     <h2>INICIA SESIÓN</h2>
-                    <input type="text" placeholder="&#128274; Usuario" name="">
-                    <input type="password" placeholder="&#128273; Contraseña" name="">
+                    <input type="text" id="usuario" name="usuario" placeholder="&#128274; Usuario" onchange="cambioFondo('usuario')">
+                    <input type="password" id="contrasena" name="contrasena" placeholder="&#128273; Contraseña" onchange="cambioFondo('contrasena')">
                     <a href="rec-pass.html">¿Olvidaste tu contraseña?</a>
                     <a href="registrar-usuario.html">Regístrate</a>
-                    <input type="submit" value="INGRESAR" name="">			
+                    <input type="submit" id="ingresar" value="INGRESAR" name="">
                 </form>
 
             </section>
@@ -56,13 +58,13 @@
                             <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a>
                             <a href="#"><i class="fa fa-github-square" aria-hidden="true"></i>Github</a>
 
-                        </div>			
+                        </div>
                     </nav>
                     <div class="logo">
                         <figure>
                             <img src="img/logo.jpg" alt="Piezas MKP">
                             <a href="#">Piezas MKP</a>
-                        </figure>		
+                        </figure>
                     </div>
                 </section>
 
