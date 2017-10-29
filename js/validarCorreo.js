@@ -7,13 +7,13 @@
 
           //Validar Correo
             if( correo.value == null || correo.value.length == 0 || /^\s+$/.test(correo.value) ) {
-              swal("","El campo correo no puede estar vacío.","error").then((value) => {
+              swal("","El campo correo no puede estar vacío.","error").then(function () {
                 correo.focus();
                 correo.style.backgroundColor = '#FF0000';
                 });
               return false;
             }else if(!validacionCorreo.test(correo.value)){
-              swal("","El campo correo no tiene el formato indicado.","error").then((value) => {
+              swal("","El campo correo no tiene el formato indicado.","error").then(function () {
                 correo.focus();
                 correo.style.backgroundColor = '#FF0000';
                 });
